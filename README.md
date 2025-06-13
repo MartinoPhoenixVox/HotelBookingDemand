@@ -38,10 +38,9 @@ Dự án được xây dựng trên nền tảng Python với sự hỗ trợ c�
 
 1.  **Sao chép Repository:**
     ```bash
-    git clone <URL_REPOSITORY_CỦA_BẠN>
+    git clone git@github.com:MartinoPhoenixVox/HotelBookingDemand.git
     cd <TÊN_THƯ_MỤC_DỰ_ÁN>
     ```
-    (Thay `<URL_REPOSITORY_CỦA_BẠN>` bằng URL thực tế của GitHub repo của bạn).
 2.  **Cài đặt Môi trường:**
     Đảm bảo bạn đã cài đặt các thư viện Python cần thiết:
     ```bash
