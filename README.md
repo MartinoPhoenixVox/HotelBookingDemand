@@ -1,67 +1,74 @@
-```markdown
 # 🏨 Phân Tích Nhu Cầu Đặt Chỗ Khách Sạn
 
-## 🚀 Giới Thiệu
+![Hotel Booking Demand Analysis](https://img.freepik.com/free-vector/hotel-building-city-urban-architecture-skyline_107791-10115.jpg?w=1380&t=st=1708892400~exp=1708893000~hmac=6b9b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b)
+_Phân tích hành vi và xu hướng đặt phòng để tối ưu hóa chiến lược kinh doanh khách sạn._
 
-Dự án này tập trung vào việc **phân tích nhu cầu đặt chỗ khách sạn** dựa trên bộ dữ liệu về thông tin đặt phòng. Mục tiêu là khám phá các xu hướng, đặc điểm của khách hàng, và đưa ra những nhận định hữu ích về hành vi đặt phòng.
+## ✨ Giới Thiệu
 
-## ✨ Tính Năng Chính
+Dự án này là một phân tích chuyên sâu về **nhu cầu đặt chỗ khách sạn**, sử dụng bộ dữ liệu thực tế về thông tin đặt phòng. Mục tiêu chính là khám phá các **xu hướng nổi bật**, nhận diện **đặc điểm khách hàng** và cung cấp những **thông tin chi tiết giá trị** về hành vi đặt phòng, giúp đưa ra các quyết định kinh doanh hiệu quả.
 
-* **Tiền xử lý dữ liệu:** Làm sạch, xử lý thiếu giá trị và định dạng dữ liệu.
-* **Khám phá dữ liệu (EDA):** Phân tích tổng quan, mối tương quan giữa các biến.
-* **Gom cụm K-Means:**
-    * Phân tích mối liên hệ giữa tuần trong năm và giá cho thuê phòng cho hai bộ dữ liệu "H1" và "H2".
-    * Sử dụng phương pháp Elbow để xác định số cụm tối ưu.
-    * Nhận định về hành vi đặt chỗ của khách hàng (khách hàng giá rẻ, khách hàng cao cấp) theo thời gian.
+## 🚀 Các Tính Năng & Phân Tích Chính
 
-## 📊 Bộ Dữ Liệu
+* **Dọn dẹp & Tiền xử lý Dữ liệu:** Đảm bảo dữ liệu sạch, không có giá trị thiếu và được định dạng chuẩn xác để sẵn sàng cho phân tích.
+* **Phân Tích Khám phá Dữ liệu (EDA):**
+    * Cái nhìn tổng quan về cấu trúc và phân phối của dữ liệu.
+    * Phân tích mối tương quan giữa các biến để phát hiện các mối quan hệ tiềm ẩn.
+* **Gom Cụm K-Means:**
+    * Áp dụng thuật toán K-Means để phân tích mối liên hệ giữa **tuần trong năm** và **giá phòng cho thuê** cho hai bộ dữ liệu "H1" (City Hotel) và "H2" (Resort Hotel).
+    * Sử dụng phương pháp **Elbow Method** để xác định số lượng cụm tối ưu, đảm bảo kết quả phân tích chính xác nhất.
+    * **Insights:** Đưa ra nhận định sâu sắc về hành vi đặt chỗ của khách hàng (ví dụ: khách hàng giá rẻ, khách hàng cao cấp) dựa trên các cụm được hình thành và thời điểm trong năm.
 
-Dự án sử dụng bộ dữ liệu về nhu cầu đặt chỗ khách sạn, cung cấp thông tin chi tiết về các giao dịch đặt phòng.
+## 📊 Nguồn Dữ Liệu
 
-* Nguồn: [https://www.sciencedirect.com/science/article/pii/S2352340918315191#t0005](https://www.sciencedirect.com/science/article/pii/S2352340918315191#t0005)
+Bộ dữ liệu được sử dụng trong dự án này cung cấp thông tin đặt chỗ chi tiết, cho phép phân tích toàn diện về hành vi người dùng.
 
-## 🛠️ Công Nghệ & Thư Viện
+* **Nguồn:** [https://www.sciencedirect.com/science/article/pii/S2352340918315191#t0005](https://www.sciencedirect.com/science/article/pii/S2352340918315191#t0005)
+
+## 💻 Công Nghệ & Thư Viện
+
+Dự án được xây dựng trên nền tảng Python với sự hỗ trợ của các thư viện mạnh mẽ:
 
 * **Ngôn ngữ:** Python
 * **Thư viện:**
-    * `pandas`: Xử lý và phân tích dữ liệu.
-    * `numpy`: Tính toán số học.
-    * `matplotlib`, `seaborn`: Trực quan hóa dữ liệu.
-    * `scikit-learn`: Thuật toán K-Means.
+    * `pandas`: Xử lý, thao tác và phân tích dữ liệu hiệu quả.
+    * `numpy`: Hỗ trợ các phép toán số học phức tạp.
+    * `matplotlib`, `seaborn`: Tạo ra các biểu đồ và đồ thị trực quan hóa dữ liệu đẹp mắt, dễ hiểu.
+    * `scikit-learn`: Triển khai các thuật toán học máy, đặc biệt là K-Means cho phân tích cụm.
 
-## 📁 Cấu Trúc Dự Án
+## 🚀 Hướng Dẫn Sử Dụng
 
-```
-.
-├── Datasets                      # Thư mục chứa datasets liên quan
-├── HotelBookingDemand.ipynb      # Notebook Jupyter chứa mã nguồn phân tích
-```
+Để khám phá và tái tạo các phân tích trong dự án:
 
-## 📝 Cách Chạy Dự Án
-
-1.  Clone repository về máy của bạn:
+1.  **Sao chép Repository:**
     ```bash
     git clone <URL_REPOSITORY_CỦA_BẠN>
+    cd <TÊN_THƯ_MỤC_DỰ_ÁN>
     ```
-2.  Cài đặt các thư viện cần thiết (nếu chưa có):
+    (Thay `<URL_REPOSITORY_CỦA_BẠN>` bằng URL thực tế của GitHub repo của bạn).
+2.  **Cài đặt Môi trường:**
+    Đảm bảo bạn đã cài đặt các thư viện Python cần thiết:
     ```bash
     pip install pandas numpy matplotlib seaborn scikit-learn
     ```
-3.  Mở và chạy file `HotelBookingDemand.ipynb` bằng Jupyter Notebook hoặc Google Colab để xem toàn bộ quá trình phân tích.
+3.  **Chạy Phân Tích:**
+    Mở file `HotelBookingDemand.ipynb` bằng Jupyter Notebook hoặc Google Colab và chạy từng ô để xem và hiểu các bước phân tích dữ liệu.
 
-## 👥 Thành Viên Thực Hiện
+## 👤 Thành Viên Dự Án
 
-* Võ Huỳnh Thanh Phương - 2151013072
+* **Võ Huỳnh Thanh Phương** - Mã sinh viên: 2151013072
 
 ## 📧 Liên Hệ
 
-Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào, vui lòng liên hệ:
-[phuong.vht.0504@gmail.com](mailto:phuong.vht.0504@gmail.com)
+Mọi câu hỏi, góp ý hoặc mong muốn hợp tác đều được hoan nghênh!
+
+* **Email:** [phuong.vht.0504@gmail.com](mailto:phuong.vht.0504@gmail.com)
 
 ---
 
-**Môn học:** Phân tích dữ liệu
-**Giảng viên:** ThS. Hồ Hướng Thiên
-**Lớp:** CS2101
+**Thông tin khóa học:**
 
-```
+* **Môn học:** Phân tích dữ liệu
+* **Giảng viên:** ThS. Hồ Hướng Thiên
+* **Lớp:** CS2101
+
+---
