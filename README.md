@@ -1,8 +1,5 @@
 # 🏨 Phân Tích Nhu Cầu Đặt Chỗ Khách Sạn
 
-![Hotel Booking Demand Analysis](https://img.freepik.com/free-vector/hotel-building-city-urban-architecture-skyline_107791-10115.jpg?w=1380&t=st=1708892400~exp=1708893000~hmac=6b9b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b)
-_Phân tích hành vi và xu hướng đặt phòng để tối ưu hóa chiến lược kinh doanh khách sạn._
-
 ## ✨ Giới Thiệu
 
 Dự án này là một phân tích chuyên sâu về **nhu cầu đặt chỗ khách sạn**, sử dụng bộ dữ liệu thực tế về thông tin đặt phòng. Mục tiêu chính là khám phá các **xu hướng nổi bật**, nhận diện **đặc điểm khách hàng** và cung cấp những **thông tin chi tiết giá trị** về hành vi đặt phòng, giúp đưa ra các quyết định kinh doanh hiệu quả.
